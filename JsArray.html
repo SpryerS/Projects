@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let favoritmatratter = ["Pizza", "Sushi", "Tacos", "Pasta", "Burgare"];
+
+        let matratterText = "Mina favoritmaträtter är: ";
+
+        for (let i = 0; i < favoritmatratter.length; i++) 
+        {
+        matratterText += "" + favoritmatratter[i] + ", ";
+        }
+
+        console.log(matratterText.slice(0, -2));
+
+
+        for (let i = 0; i < favoritmatratter.length; i++) 
+        {
+        matratterText += "" + favoritmatratter[i] + ", ";
+        }
+
+        console.log(matratterText.slice(0, -2));
+
+        let färger = ["Blå", "Röd", "Grön", "Gul", "Lila"];
+
+        console.log("Mina favorit färger: " + färger.join(", "));
+
+        färger.push("Orange");
+
+        console.log("Nya färger: " + färger.join(", "));
+
+        färger.splice(2, 1);
+
+        console.log("Nya färger: " + färger.join(", "));
+
+        
+
+        let stader = ["Stockholm", "Göteborg", "Malmö", "Uppsala", "Linköping"];
+
+        stader.unshift("Lund");
+
+        stader.pop();
+
+        stader.push("Örebro");
+
+        stader.splice(0, 0, "Göteborg");
+
+        console.log("Uppdaterade städer: " + stader.join(", "));
+
+    </script>
+
+</body>
+</html>
