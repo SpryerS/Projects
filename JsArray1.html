@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+    let numbers = [1, 2, 3, 4, 5];
+
+    for (let i = 0; i < numbers.length; i++) 
+    {
+        console.log(numbers[i]);
+    }
+
+
+    let colors = ['Röd', 'Blå', 'Grön', 'Gul', 'Lila'];
+
+    for (let color of colors) 
+    {
+        console.log(color);
+    }
+
+
+    function sumArray(arr) 
+    {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) 
+        {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    let numbers2 = [5, 2, 1, 9, 88];
+    let sum = sumArray(numbers2);
+    console.log("Summan av alla talen är: " + sum);
+
+
+    function multiplyArrayByTwo(arr) 
+    {
+    let multipliedArray = [];
+    for (let i = 0; i < arr.length; i++) 
+    {
+        multipliedArray.push(arr[i] * 2);
+    }
+    return multipliedArray;
+    }
+
+    let numbers3 = [6, 72, 4, 1, 7];
+    let multipliedNumbers = multiplyArrayByTwo(numbers3);
+    console.log("Ursprungliga talen: " + numbers3);
+    console.log("Talen multiplicerade med 2: " + multipliedNumbers);
+
+    </script>
+    
+</body>
+</html>
