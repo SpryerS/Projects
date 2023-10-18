@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cats.ico" type="image/x-icon">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="grid.js">
+    <title>Grid</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const enlargeableImages = document.querySelectorAll(".enlargeable");
+    
+            enlargeableImages.forEach((image) => {
+                image.addEventListener("click", function () {
+                    image.classList.toggle("enlarged");
+                });
+            });
+        });
+    </script>
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>Galleri</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="Aluminium.png" alt="Bild 1">
+            <p>Aluminium on the periodic table</p>
+        </div>
+        <div class="gallery-item">
+            <img class="enlargeable" src="Beatle.png" alt="Bild 2">
+            <p>Beatlejuice getting impaled</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Celtic.png" alt="Bild 3">
+            <p>Celtic Knot inside of Adobe Illustrator
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="Iodine.png" alt="Bild 4">
+            <p>Iodine on the periodic table</p>
+        </div>
+        <div class="gallery-item">
+            <img src="maaat.png" alt="Bild 5">
+            <p>Food</p>
+        </div>
+        <div class="gallery-item">
+            <img src="mans.png" alt="Bild 6">
+            <p>What every man needs</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Nahh.png" alt="Bild 7">
+            <p>Surprised Bonnie</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Potassium.png" alt="Bild 8">
+            <p>Potassium on the periodic table</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Powder.png" alt="Bild 9">
+            <p>Cat about to be incinerated</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Simple.png" alt="Bild 10">
+            <p>Simple being poggers</p>
+        </div>
+        <div class="gallery-item">
+            <img src="What.png" alt="Bild 11">
+            <p>What</p>
+        </div>
+        <div class="gallery-item">
+            <img src="yes.png" alt="Bild 1">
+            <p>Yes</p>
+        </div>
+
+    </div>
+</body>
+</html>
+</html>
