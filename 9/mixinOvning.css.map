@@ -1,0 +1,1 @@
+{"version":3,"sources":["mixinOvning.scss","mixinOvning.css"],"names":[],"mappings":"AAwDA;EAtDI,sBAuDiB;EAtDjB,WAsDuB;ACtD3B;;ADKI;EAEI,eAkDgB;EAjDhB,gCAiDsB;ACpD9B;;ADSA;EAEI,YAAA;EACA,aAAA;EACA,wDAAA;ACPJ;;ADUI;EAEI;IAEI,qBAAA;ECTV;EDWM;IAEI,sBAAA;ECVV;AACF;ADgBI;EAEI,YAuBS;EAtBT,aAsBe;ACrCvB;;ADqBA;EACI,iBAiBiB;EAhBjB,kBAgBsB;EAftB,mBAe4B;ACjChC","file":"mixinOvning.css"}

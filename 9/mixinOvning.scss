@@ -1,0 +1,73 @@
+@include paragraphStyle(16px, 'Arial, sans-serif');
+
+@include colorAnimation(2s);
+
+@include spacing(10px, 20px);
+
+@include borderStyle(2px, #ccc, solid);
+
+@mixin colorScheme($background-color, $text-color) 
+{
+    background-color: $background-color;
+    color: $text-color;
+}
+
+@mixin paragraphStyle($font-size, $font-family) 
+{
+    p 
+    {
+        font-size: $font-size;
+        font-family: $font-family;
+        text-align: center;
+    }
+}
+
+@mixin colorAnimation($duration) 
+{
+    .DivAnim 
+    {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: colorChange $duration ease-in-out infinite alternate;
+    }
+  
+    @keyframes colorChange 
+    {
+        from 
+        {
+            background-color: rgb(0, 247, 255);
+        }
+        to 
+        {
+            background-color: green;
+        }
+   }
+}
+
+@mixin spacing($margin, $padding) 
+{
+    h1 
+    {
+        margin: $margin;
+        padding: $padding;
+    }
+}
+
+@mixin borderStyle($border-width, $border-color, $border-style) 
+{
+    div 
+    {
+        border-width: $border-width;
+        border-color: $border-color;
+        border-style: $border-style;
+    }
+}
+
+div 
+{
+    @include colorScheme(#eee, #333);
+}
