@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Återställ standardmarginal och padding för sidokroppen */
+/* Grundläggande nollställning av marginaler och stoppning, samt typsnittsval */
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 
-/* Stil för butikens logotyp */
+/* Stil för butikslogotyp */
 .store_logo {
   text-decoration: none;
   color: white;
@@ -27,7 +27,7 @@ body {
   z-index: 1000;
 }
 
-/* Stil för huvudsektionen i navigationsfältet */
+/* Stil för navigationshuvudet */
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
   height: 100%;
 }
 
-/* Stil för navigationslänkarna */
+/* Stil för navigationslänkar */
 .nav {
   display: flex;
   justify-content: center;
@@ -43,7 +43,6 @@ body {
   height: 100%;
 }
 
-/* Stil för enskild navigationslänk */
 .nav-link {
   text-decoration: none;
   padding: 10px 4vw;
@@ -51,12 +50,6 @@ body {
   font-size: 2.2vw;
   display: inline-block;
   line-height: 5vw;
-}
-
-/* Stil för huvudinnehållet på sidan */
-.content {
-  margin-top: 5vw;
-  padding: 20px;
 }
 
 /* Stil för bakgrundsbilden */
@@ -71,7 +64,7 @@ body {
   z-index: -1;
 }
 
-/* Stil för länk till inloggning */
+/* Stil för inloggningslänken */
 .sign-in {
   text-decoration: none;
   color: white;
@@ -79,45 +72,29 @@ body {
   margin-right: 50px;
 }
 
-/* Stil för cirkulär rektangel */
+/* Stil för cirkulärt rektangel för förväntad leveranstid */
 .circular-rectangle {
   position: absolute;
-  left: 2%;
+  left: 20%;
   top: 300%;
   width: 30%;
-  max-width: 300px;
-  height: 15%;
-  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 500px;
+  height: 355%;
+  background-color: rgb(255, 255, 255);
   border-radius: 24px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 20px;
 }
 
-/* Stil för butiksbeskrivning */
-.store-description {
-  margin: 0;
-  font-size: 1.6vw;
-  color: #EE2737;
-  text-align: center;
+/* Stil för texten för förväntad leveranstid */
+.DTime {
+  font-size: 1.2vw;
+  margin-top: 1vw;
 }
 
-/* Stil för kundtillfredsställelsemeddelande */
-.customer-satisfaction {
-  left: 2.2%;
-  position: absolute;
-  top: 350%;
-  font-size: 1.5vw;
-  color: white;
-}
-
-/* Stil för placeringsordningslänk */
-.place-order {
-  left: 2.2%;
-  position: absolute;
-  top: 450%;
-  font-size: 1.5vw;
-  text-decoration: none;
-  color: #EE2737;
-}/*# sourceMappingURL=style.css.map */
+/* Stil för texten för beräknad leveranstid */
+.RTime {
+  font-size: 2vw;
+}/*# sourceMappingURL=myorderstyle.css.map */

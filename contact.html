@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metainformation för teckenuppsättning och responsiv vy -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel på sidan -->
+    <title>GoFood!</title>
+
+    <!-- Favicon för sidan -->
+    <link rel="icon" type="icon" href="icon.ico">
+
+    <!-- Länk till extern CSS-stilfil för kontaktformuläret -->
+    <link rel="stylesheet" href="contactstyle.css">
+
+    <!-- Förhandsanslutning till Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigationssektion -->
+    <div class="navbar">
+        <header class="header">
+            <!-- Butikslogotyp och länk till startsidan -->
+            <a href="index.html" class="store_logo">Go Food!</a>
+            <!-- Logotypsektion -->
+            <div class="logo"></div>
+            <!-- Navigationslänkar -->
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="store.html" class="nav-link">Store</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="myorder.html" class="nav-link">My Order</a>
+            </nav>
+            <!-- Användaråtgärder -->
+            <div class="user-actions">
+                <a href="#" class="sign-in">Sign In</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Kontaktformulärsektion -->
+    <div class="container">
+        <div class="row">
+            <!-- Rubrik för kontaktformuläret -->
+            <h1>contact us</h1>
+        </div>
+        <div class="row">
+            <!-- Underrubrik för kontaktformuläret -->
+            <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row input-container">
+            <!-- Namnfält -->
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input id="name" type="text" required />
+                    <label for="name">Name</label> 
+                </div>
+            </div>
+            <!-- E-postfält -->
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input id="email" type="text" required />
+                    <label for="email">Email</label> 
+                </div>
+            </div>
+            <!-- Telefonnummerfält -->
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                    <input id="phone" type="text" required />
+                    <label for="phone">Phone Number</label> 
+                </div>
+            </div>
+            <!-- Meddelandefält -->
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <!-- Knapp för att skicka meddelandet -->
+            <div class="col-xs-12">
+                <div class="btn-lrg submit-btn" onclick="sendMessage()">Send Message</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bakgrundsbild för hela sidan -->
+    <img class="wallpaper" src="images/background.png" alt="bg">
+
+    <!-- JavaScript-kod för att rensa textfälten -->
+    <script>
+        function sendMessage() {
+            // Hämta alla textfält och textområden
+            var nameField = document.getElementById('name');
+            var emailField = document.getElementById('email');
+            var phoneField = document.getElementById('phone');
+            var messageField = document.getElementById('message');
+
+            // Rensa innehållet i textfälten och textområden
+            nameField.value = '';
+            emailField.value = '';
+            phoneField.value = '';
+            messageField.value = '';
+        }
+    </script>
+</body>
+</html>

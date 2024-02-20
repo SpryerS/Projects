@@ -1,0 +1,113 @@
+/* Allmän styling för sidan */
+body {
+    font-family: 'Heebo', sans-serif;
+    overflow: hidden;
+}
+
+/* Stil för butikslogotypen */
+.store_logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vw;
+    line-height: 5vw;
+    margin-left: 20px;
+}
+
+/* Stil för navigationsfältet */
+.navbar {
+    background-color: rgb(51, 50, 50);
+    height: 5vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 50px; /* Lägger till ett mellanrum under navigationsfältet */
+    border-radius: 0; /* Ingen rundning av hörnen */
+}
+
+/* Stil för navigationshuvudet */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Stil för navigationslänkar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 4vw;
+    color: white;
+    font-size: 2.2vw;
+    display: inline-block; 
+    line-height: 5vw; 
+}
+
+/* Stil för bakgrundsbild som täcker hela sidan */
+.wallpaper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Stil för inloggningslänk */
+.sign-in{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 50px;
+}
+
+/* Stil för cirkulär rektangel */
+.circular-rectangle {
+    position: absolute;
+    left: 2%;
+    top: 300%;
+    width: 30%;
+    max-width: 300px;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Stil för butiksbeskrivning */
+.store-description {
+    margin: 0;
+    font-size: 1.6vw;
+    color: #EE2737;
+    text-align: center;
+}
+
+/* Stil för jumbotron */
+.jumbotron{
+    margin-bottom: 0;
+}
+
+/* Stil för sidfoten */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+/* Stil för panelinnehållet */
+.panel-body{
+    align-items: center;
+    padding-left: 20%;
+}
+
